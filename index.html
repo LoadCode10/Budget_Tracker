@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Budget Tracker</title>
+</head>
+<body>
+  <h1>Budget Tracker System</h1>
+  <div class="budget-app">
+    <div class="budget-operations">
+      <div class="add-budget-div">
+        <h3>Add Budget</h3>
+        <label for="add-budget">Budget:</label>
+        <input type="number" id="add-budget">
+        <button class="add-budget-btn">Add Budget</button>
+      </div>
+      <div class="add-expense-div">
+        <h3>Add Expense</h3>
+        <form action="" class="expense-form">
+          <label for="expence-title">Expense Title:</label>
+          <input type="text" id="expence-title" required>
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" required>
+          <input type="submit" value="Add Expense" class="add-expense-btn">
+        </form>
+      </div>
+      <button class="reset-btn">Reset All</button>
+    </div>
+    <div class="budget-details">
+      <div class="budget-infos-div">
+        <p class="total-budget parag">Total Budget: 00.00$</p>
+        <p class="total-expense parag">Total Expense: 00.00$</p>
+        <p class="budget-left parag">Budget Left: 00.00$</p>
+      </div>
+      <div class="all-expense-div">
+        <h3>Expence History:</h3>
+        <hr>
+        <table class="my_table">
+          <thead>
+            <tr>
+              <th>Expense:</th>
+              <th>Amount:</th>
+              <th>Id:</th>
+              <th>Action:</th>
+            </tr>
+          </thead>
+          <tbody class="mytable_body">
+            <!--
+            <tr>
+              <td>Grocery</td>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <td>Electricity</td>
+              <td>1000</td>
+            </tr>
+            -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
